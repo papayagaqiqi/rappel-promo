@@ -351,6 +351,28 @@ body {
   color: var(--accent);
 }
 
+/* ===== TRAINING PHOTOS SECTION ===== */
+.training-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.training-card {
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.training-card img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
 /* ===== LOCATION SECTION ===== */
 .location-card {
   background: var(--bg2);
@@ -629,6 +651,31 @@ body {
 
     <div class="equipment-note">
       <strong>设备说明：</strong>本次活动配备3套NTR专业五点式安全带，参训人员轮流使用。每套装备均经过安全检查，符合高空作业防护标准。
+    </div>
+  </div>
+
+  <div class="divider">
+    <div class="line"></div>
+    <div class="dot"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- TRAINING PHOTOS -->
+  <div class="section">
+    <div class="section-title">
+      <div class="line"></div>
+      <h2>训练精彩瞬间</h2>
+      <span class="en">TRAINING MOMENTS</span>
+    </div>
+
+    <div class="training-grid">
+      <div class="training-card"><img src="assets/training_1.jpg" alt="索降训练"></div>
+      <div class="training-card"><img src="assets/training_2.jpg" alt="索降训练"></div>
+      <div class="training-card"><img src="assets/training_3.jpg" alt="索降训练"></div>
+      <div class="training-card"><img src="assets/training_4.jpg" alt="索降训练"></div>
+      <div class="training-card"><img src="assets/training_5.jpg" alt="索降训练"></div>
+      <div class="training-card"><img src="assets/training_6.jpg" alt="索降训练"></div>
+      <div class="training-card"><img src="assets/training_7.jpg" alt="索降训练"></div>
     </div>
   </div>
 
