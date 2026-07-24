@@ -353,22 +353,32 @@ body {
 
 /* ===== TRAINING PHOTOS SECTION ===== */
 .training-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 16px;
 }
 
 .training-card {
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 10px;
   background: var(--bg2);
   border: 1px solid var(--rule);
   border-radius: 8px;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.training-card:nth-child(2n) {
+  margin-right: 0;
 }
 
 .training-card img {
   width: 100%;
-  aspect-ratio: 3/4;
+  height: 200px;
   object-fit: cover;
   display: block;
 }
